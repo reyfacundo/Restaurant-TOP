@@ -1,4 +1,4 @@
-import bgImg from "./4313125.jpg"
+import bgImg from "../assets/bg.jpg"
 
 function mainContentRender() {
     const content = document.querySelector('#content');
@@ -6,7 +6,7 @@ function mainContentRender() {
     const img = document.createElement('img');
     img.src = bgImg;
     img.alt = "bg-image";
-    img.classList.add('bg');
+    divBg.classList.add('bg');
     divBg.appendChild(img);
 
     const githubDiv = document.createElement('div');
