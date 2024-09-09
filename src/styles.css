@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "Nanum Brush Script", cursive;
+    margin: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    cursor: url('/src/cursor.png'), auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f45444;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+
+
+nav {
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 117px;
+    box-shadow: 0px 7px #72333363;
+    cursor: url('/src/pointer.png'), auto;
+    transition: transform .2s;
+}
+
+.container:hover {
+    box-shadow: 0px 7px #282542;
+    transform: scale(1.02);
+}
+
+.main:hover {
+    color: #282542;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #ca3a2c;
+    height: 100%;
+    width: 100%;
+    background-color: #fbf8cc;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.one,
+.two,
+.three {
+    height: 19px;
+    width: 19px;
+    background-color: #fbf8cc;
+}
+
+.pole {
+    width: 100%;
+    border: 5px solid #282542;
+    position: absolute;
+    top: 15px;
+    z-index: -1;
+}
+
+#content {
+    flex: 1;
+    /* border: 2px black solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.github{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px #f7e6ce;
+    width: 200px;
+    height: 50px;
+    background-color: #282542;
+    position: absolute;
+    right: 0;
+    color:#ca3a2c;
+    bottom: 7%;
+    transition: transform .2s;
+}
+.github:hover{
+    background-color: #282542cc;
+    cursor: url('/src/pointer.png'), auto;
+}
+/* .info {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #fbf8cc;
+    position: fixed;
+    right: 15%;
+    bottom: 7%;
+    height: 300px;
+    width: 300px;
+    border: 2px #282542 solid;
+    color: #282542;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.219);
+} */
